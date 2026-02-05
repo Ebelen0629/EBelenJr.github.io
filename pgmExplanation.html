@@ -4,22 +4,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document Title</title>
+  <title>Easy GPA Calculator</title>
   <link rel="stylesheet" href="styles.css">
   <script src="scripts.js"></script>
 <body> 
   <header>
     <!--repeated top of page info-->
-    <h1>GPA Calculator</h1>
-    <h2>Calculating your GPA has never been easier<h2>
+    <h1>A Basic GPA Calculator</h1>
+    <h2>Calculating your <abbr title="Grade Point Average">GPA</abbr> has <em>never</em> been easier</h2>
   </header>
   <main>
     <!--main content goes here-->
     <p>
+      This is a <strong>basic code</strong> that can help calculate your 
+      <abbr title="Grade Point Average">GPA</abbr> based on <mark>two classes</mark>. You can modify the code
+      to add more classes as needed.
+    </p>
+    <div>
+      <h3><abbr title="Grade Point Average">GPA</abbr> Calculation Code:</h3>
+    </div>
       <pre> 
         <code>
-        char name [50];
-        char semester [50];
+        <var>char name [50];</var>
+        <var>char semester [50];</var>
 
         char cName1[50];
         char cName2[50];
@@ -36,18 +43,19 @@
 
         totalAttemptedHours = c1Hours + c2Hours;
         totalQualityPoints = (c1Hours * c1Weight)+(c2Hours * c2Weight);
-        gPa = totalQualityPoints / totalAttemptedHours;
+        <var>gPa</var> = totalQualityPoints / totalAttemptedHours;
 
-        cout << "Total Attempted Hours: " << totalAttemptedHours << endl;
-        cout << "Total Quality Points: " << totalQualityPoints << endl;
-        cout << "GPA: " << gPa << endl;
-        <code>
+        <samp>cout << "Total Attempted Hours: " << totalAttemptedHours << endl;</samp>
+        <samp>cout << "Total Quality Points: " << totalQualityPoints << endl;</samp>
+        <samp>cout << "GPA: " << gPa << endl;</samp>
+        </code>
+      </pre>
       <cite>An easy to use GPA Calculator</cite>
   <p>    
   </main>
   <footer>
     <!--repeated bottom of page content goes here-->
-  <p>Created on February 5th, 2026<p>  
+  <p><small>Created on <time datetime="2026-02-05">February 5th, 2026</time></small></p>  
   </footer>
 </body>
 </html>
